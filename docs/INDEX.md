@@ -2,13 +2,20 @@
 
 This index lists all documentation and related files for the character.
 
+---
+
 ## Main Documentation
 
 | Document | Path | Description |
 |----------|------|-------------|
-| **README** | [../README.md](../README.md) | Main character documentation, system architecture, translations |
-| **History** | [HISTORY.md](HISTORY.md) | Changelog from original creator |
+| **README** | [../README.md](../README.md) | Main character documentation, intro, file structure |
+| **Architecture** | [ARCHITECTURE.md](ARCHITECTURE.md) | System architecture, fight modes, skills, animations |
+| **Translation** | [TRANSLATION.md](TRANSLATION.md) | Japanese → English translation reference |
+| **Log** | [log.md](log.md) | Creator update history (changelog) |
+| **History** | [HISTORY.md](HISTORY.md) | Alternate changelog format |
 | **Index** | [INDEX.md](INDEX.md) | This file |
+
+---
 
 ## Original Text Files (Japanese)
 
@@ -21,6 +28,8 @@ This index lists all documentation and related files for the character.
 | Move List (Shadow) | [../txt/技表・解説(シャドウ).txt](../txt/技表・解説(シャドウ).txt) | Shadow mode |
 | Variable Table | [../txt/変数表.txt](../txt/変数表.txt) | Variable reference |
 
+---
+
 ## English Documentation
 
 | File | Path | Description |
@@ -30,6 +39,8 @@ This index lists all documentation and related files for the character.
 | Move List (Classic) | [../txt/Eng/Move List (Classic).txt](../txt/Eng/Move List (Classic).txt) | Classic mode |
 | Injected Moves | [../txt/Eng/Injected Moves.txt](../txt/Eng/Injected Moves.txt) | Config-injectable moves |
 | User Policy | [../txt/Eng/User Policy.txt](../txt/Eng/User Policy.txt) | Usage policy |
+
+---
 
 ## Source Files
 
