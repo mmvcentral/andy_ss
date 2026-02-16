@@ -1,0 +1,71 @@
+--------------------------------------------------------------------------------
+ Andy Bogard (Normal Mode)
+--------------------------------------------------------------------------------
+
+[Buttons]
+Light Panch				x
+Light Kick				a
+Hard Panch 				y
+Hard Kick				b
+
+[Moves]
+Run					F, F
+Back Step				B, B
+Small Jump				Tap U
+Middle Jump				After tapping D or while dushing, tap U
+Large Jump				After tapping D or while dushing, press U
+Taunt					Start
+Emergency Evasion			x + a
+Recovery				x + a
+Blow Off				y + b
+Guard Cancel Emergency Evasion		x + a (While Guarding) (Uses 1 Power Bar)
+Guard Cancel Blow Off			y + b (While Guarding) (Uses 1 Power Bar)
+Super Cancel				During specific SP moves, enter DM (Uses 1 Power Bar)
+
+[Nomal Throws]
+Gourin Kai				B or F + y (Near Opponent)
+Kakaekomi Nage				B or F + b (Near Opponent)
+
+[Command Moves]
+Agemen					DF + x
+Uwa Agito				F + a
+Shimo Agito				DF + y
+
+[Special Moves]
+Zan-ei Ken (SC)				DB, F, x or y
+Hisho Ken				D, DB, B, x
+Geki Hisho Ken				D, DB, B, y
+Shoryu Dan (SC)				F, D, DF, x or y
+Kuha Dan (SC)				B, DB, D, DF, F, a or b
+ - Brake				x + a
+Gen-ei Shiranui				D, DF, F, a or b (in Air)
+ - Gen-ei Shiranui Uwa Agito		a
+ - Gen-ei Shiranui Shimo Agito (SC)	b
+Gen-ei Shiranui Hiei			D, DB, B, a or b
+ - Gen-ei Shiranui Uwa Agito		a
+ - Gen-ei Shiranui Shimo Agito (SC)	b
+Yami Abisegeri				F, D, DF, a or b
+
+[EX Special Moves](Uses 1 Power Bars)
+Zan-ei Ken Ugachi (SC)			DB, F, x + y
+Zatsu Hisho Ken				D, DB, B, x + y
+Shoryu Dan (SC)				F, D, DF, x + y
+Kuha Dan (SC)				B, DB, D, DF, F, a + b
+ - Brake				x + a
+Bakushin				D, DF, F, a + b (in Air)
+Gen-ei Shiranui Hiei			D, DB, B, a + b
+ - Gen-ei Shiranui Bakushin		a or b
+Yami Abisegeri Kai			F, D, DF, a + b
+ - Follow Up				U + a or b
+
+[Desperate Moves](Uses 1 Power Bars)
+Cho Reppa Dan				D, DB, B, DB, D, DF, F, a or b
+Bakurestu Tensho Ken			D, DB, B, DB, D, DF, F, x or y
+Dan Da Dan				D, DF, F, D, DF, F, x or y (Mash)
+
+[MAX Desperate Moves](Uses 2 Power Bars)
+Zetsu Reppa Dan				D, DB, B, DB, D, DF, F, a + b
+Zan-ei Reppa				D, DB, B, DB, D, DF, F, x + y
+
+[CLIMAX Desperate Moves](Uses 3 Power Bars)
+Cho Shinsoku Zan-ei Ken			D, DB, B, DB, D, DF, F, y + b

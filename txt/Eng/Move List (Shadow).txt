@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+ Andy Bogard (Shadow Mode)
+--------------------------------------------------------------------------------
+Can be available in Config.
+
+[Command Moves]
+Agemen					DF + x
+Uwa Agito				F + a
+Shimo Agito				DF + y
+
+[Special Moves]
+Zan-ei Ken Ugachi (SC)			DB, F, x or y
+Geki Hisho Ken				D, DB, B, x or y
+Kuha Dan (SC)				B, DB, D, DF, F, a or b
+ „¯- Brake								x + a
+Gen-ei Shiranui Hiei			D, DB, B, a or b
+„° - Gen-ei Shiranui Uwa Agito			a
+„¯ - Gen-ei Shiranui Shimo Agito (SC)		b
+Yami Abisegeri				F, D, DF, a or b
+Shiranui Kumogarami			D, DF, F, a or b (in Air)
+
+[EX Special Moves](Uses 1 Power Bars)
+Zan-ei Ken Ugachi (SC)			DB, F, x + y
+Zatsu Hisho Ken				D, DB, B, x + y
+Kuha Dan (SC)				B, DB, D, DF, F, a + b
+ „¯- Brake								x + a
+Gen-ei Shiranui Hiei			D, DB, B, a + b
+„¯ - Gen-ei Shiranui Bakushin				a or b
+Yami Abisegeri Kai			F, D, DF, a + b
+ - Follow Up				U + a or b
+Bakushin				D, DF, F, a + b (in Air)
+
+[Desperate Moves](Uses 1 Power Bars)
+Cho Reppa Dan				D, DB, B, DB, D, DF, F, a or b
+Bakurestu Tensho Ken			D, DB, B, DB, D, DF, F, x or y
+
+[MAX Desperate Moves](Uses 2 Power Bars)
+Zetsu Reppa Dan				D, DB, B, DB, D, DF, F, a + b
+Bakuretsu Tensho Ken			D, DB, B, DB, D, DF, F, x + y
+
+[CLIMAX Desperate Moves](Uses 3 Power Bars)
+Cho Shinsoku Zan-ei Ken			D, DB, B, DB, D, DF, F, y + b

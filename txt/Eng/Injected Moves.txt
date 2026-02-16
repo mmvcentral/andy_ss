@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+ Injected Moves
+--------------------------------------------------------------------------------
+Can be available in Config.
+
+[Special Moves]
+Shoryu Dan				F, D, DF, x or y
+Gekiheki Haisui Sho			B, DB, D, DF, F, x or y (Near opponent)
+
+[EX Special Moves]
+Shoryu Dan				F, D, DF, x + y
+Gekiheki Haisui Sho			B, DB, D, DF, F, x + y (Near opponent)
+
+[Desperation Moves]                        
+Zan-ei Ryusei Ken			D, DB, B, DB, D, DF, F, x or y
+
+[MAX Desperation Moves]
+Shoryu Reppa Dan			D, DB, B, D, DB, D, x or y

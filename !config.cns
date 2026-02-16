@@ -1,0 +1,295 @@
+;=========================< コンフィグ >=========================
+[Statedef 10000]
+anim = 9999
+ctrl = 0
+
+;--- 裏モード ---
+[State 10000, Ex Mode]
+type = parentvarset
+trigger1 = time = 0
+var(15) = 0
+; 0で通常モード
+; 1でクラシックモード
+; 2でシャドウモード
+
+;--- 先行入力受付時間 必殺技 ---
+[State 10000, Precede Input Time]
+type = parentvarset
+trigger1 = time = 0
+v = 32
+value = 6
+; value = フレーム数
+; デフォルト6
+
+;--- 先行入力 受付時間 超必殺技 ---
+[State 10000, Precede Input Time]
+type = parentvarset
+trigger1 = time = 0
+v = 33
+value = 12
+; value = フレーム数
+; デフォルト12
+
+;--- 地上技・超必殺技空中ガード ---
+[State 10000, Air Guard]
+type = parentvarset
+trigger1 = time = 0
+v = 34
+value = 0
+; 0で不能、その他で可能
+; デフォルト0
+
+;--- 空中技・飛び道具空中ガード ---
+[State 10000, Air Guard]
+type = parentvarset
+trigger1 = time = 0
+v = 35
+value = 1
+; 0で不能、その他で可能
+; デフォルト1
+
+;--- 空中ガード可否 ---
+[State 10000, Air Guard]
+type = parentvarset
+trigger1 = time = 0
+v = 36
+value = 1
+; 0で不能、その他で可能
+; デフォルト1
+
+;--- 画面点滅 ---
+[State 10000, Flash]
+type = parentvarset
+trigger1 = time = 0
+v = 37
+value = 1
+; 0で点滅しない、1で点滅
+; デフォルト1
+
+;--- ゲージ増加倍率 ---
+[State 10000, Power Maginification]
+type = parentvarset
+trigger1 = 1
+fv = 4
+value = 1.25                  *root,fvar(0)
+; 攻撃ヒット時、必殺技使用時のゲージ増加量
+; デフォルト1.25
+
+;--- 没技解放 ---
+[State 10000, Injected Skills]
+type = parentvarset
+trigger1 = time = 0
+var(49) = 0
+; 1で解放
+; ※AI起動時は強制off
+; デフォルト0
+; 詳細はreadmeに
+
+;--- AI常時起動 ---
+[State 10000, AI]
+type = parentvarset
+trigger1 = time = 0
+var(50) = 0
+ignorehitpause = 1
+; 0以外で常時on
+; デフォルト0
+
+;--- AIレベル ---
+;コンボレベル
+[State 10000, Combo Level]
+type = parentvarset
+trigger1 = root,var(59) > 0
+var(51) = 2
+ignorehitpause = 1
+;from 1 to 3
+;デフォルト2
+;1 簡単なもののみ
+;2 できるだけ多彩に 多少火力は劣る
+;3 ダメージ優先
+
+;ガードレベル
+[State 10000, Guard Level]
+type = parentvarset
+trigger1 = root,var(59) > 0
+var(52) = 8
+ignorehitpause = 1
+;0から10
+;from 0 to 10
+;デフォルト8
+;毎Fレベルの二乗%でガード
+
+;反応レベル
+[State 10000, AI Level]
+type = parentvarset
+trigger1 = root,var(59) > 0
+var(53) = 8
+ignorehitpause = 1
+;0から10
+;from 0 to 10
+;デフォルト8
+
+;行動確率
+[State 10000, Frequency Level]
+type = parentvarset
+trigger1 = root,var(59) > 0
+var(59) = 10
+ignorehitpause = 1
+;0から10
+;from 0 to 10
+;デフォルト10
+
+;--- 相手燃焼時Pal ---
+;リセット ※弄らない
+[State 10000, Reset]
+type = null
+triggerall = parent,stateno != [1500,1599]
+triggerall = parent,stateno != [3050,3099]
+triggerall = parent,stateno != [3100,3199]
+triggerall = parent,stateno != [200100,200199]
+trigger1 = parent,var(26) >= 0
+trigger1 = var(26) := -1
+trigger2 = parent,var(27) >= 0
+trigger2 = var(26) := -1
+trigger3 = parent,var(28) >= 0
+trigger3 = var(26) := -1
+
+
+;設定方法
+;trigger1 = root,palno = (1)←パレット番号
+;trigger1 = var(26) := (30) || var(27) := (150) || var(28) := (210)
+;　　　　　　　 　 R(赤)↑            G(緑)↑             B(青)↑
+
+
+;燃焼(闇)
+[State 10000, Fire]
+type = null
+triggerall = parent,stateno = 1500 || parent,stateno = 1550 || (parent,stateno = 3050 && parent,var(15) != 1) || parent,stateno = 3120 || parent,stateno = 3180 || (parent,stateno = 200110 && parent,var(15) = 2)
+trigger1 = root,palno = 1
+trigger1 = var(26) := 60 || var(27) := 135 || var(28) := 210
+trigger2 = root,palno = 2
+trigger2 = var(26) := 135 || var(27) := 120 || var(28) := 225
+trigger3 = root,palno = 3
+trigger3 = var(26) := 240 || var(27) := 150 || var(28) := 60
+trigger4 = root,palno = 4
+trigger4 = var(26) := 60 || var(27) := 135 || var(28) := 210
+trigger5 = root,palno = 5
+trigger5 = var(26) := 135 || var(27) := 120 || var(28) := 225
+trigger6 = root,palno = 6
+trigger6 = var(26) := 135 || var(27) := 120 || var(28) := 225
+
+;燃焼
+[State 10000, Fire]
+type = null
+triggerall = (parent,stateno = 3050 && parent,var(15) = 1) || (parent,stateno = 200110 && parent,var(15) = 0) || (parent,stateno = 200110 && parent,var(15) = 1)
+trigger1 = root,palno = 1
+trigger1 = var(26) := 240 || var(27) := 150 || var(28) := 60
+trigger2 = root,palno = 2
+trigger2 = var(26) := 240 || var(27) := 180 || var(28) := 90
+trigger3 = root,palno = 3
+trigger3 = var(26) := 30 || var(27) := 135 || var(28) := 225
+trigger4 = root,palno = 4
+trigger4 = var(26) := 60 || var(27) := 135 || var(28) := 210
+trigger5 = root,palno = 5
+trigger5 = var(26) := 240 || var(27) := 180 || var(28) := 90
+trigger6 = root,palno = 6
+trigger6 = var(26) := 135 || var(27) := 120 || var(28) := 225
+
+
+;代入 ※弄らない
+[State 10000, Red]
+type = parentvarset
+trigger1 = 1
+v = 26
+value = var(26)
+
+[State 10000, Green]
+type = parentvarset
+trigger1 = 1
+v = 27
+value = var(27)
+
+[State 10000, Blue]
+type = parentvarset
+trigger1 = 1
+v = 28
+value = var(28)
+
+
+
+
+
+;--- パワーMAXゲージ x座標 ---
+[State 10000, Power MAX Gauge Pos X]
+type = parentvarset
+trigger1 = time = 0
+v = 30
+value = 0
+;value = の数だけ移動
+
+;--- パワーMAXゲージ y座標 ---
+[State 10000, Power MAX Gauge Pos Y]
+type = parentvarset
+trigger1 = time = 0
+v = 31
+value = 0
+; value = の数だけ移動
+
+[State 10000, Power MAX Gauge Pos Y]
+type = parentvarset
+trigger1 = var(18) = 1
+trigger1 = ID < partner,ID
+trigger1 = time = 0
+v = 31
+value = -10
+; パートナーが同製作者時
+
+;=========================< ステータス >=========================
+[Data]
+life              = 1000
+power             = 5000
+attack            = 100
+defence           = 100
+fall.defence_up   = 50
+liedown.time      = 60
+airjuggle         = 15
+sparkno           = 2
+guard.sparkno     = 40
+KO.echo           = 0
+volume            = 0
+IntPersistIndex   = 0
+FloatPersistIndex = 0
+
+[Size]
+xscale           = 1
+yscale           = 1
+ground.back      = 15
+ground.front     = 15
+air.back         = 12
+air.front        = 12
+height           = 60
+attack.dist      = 160
+proj.attack.dist = 90
+proj.doscale     = 1
+head.pos         = 0,-90
+mid.pos          = 0,-65
+shadowoffset     = 0
+draw.offset      = 0,0
+
+[Velocity]
+walk.fwd     = 3.5
+walk.back    = -3.5
+run.fwd      = 6.5,0
+run.back     = -9,-6
+jump.neu     = 0,-10.5
+jump.fwd     = 3.5
+jump.back    = -3.5
+airjump.neu  = 0,-8
+airjump.fwd  = 3
+airjump.back = -3
+
+[Movement]
+airjump.num     = 0
+airjump.height  = 35
+yaccel          = .55
+stand.friction  = .85
+crouch.friction = .82

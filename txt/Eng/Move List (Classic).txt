@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------
+ Andy Bogard (Classic Mode)
+--------------------------------------------------------------------------------
+Can be available in Config.
+
+[Command Moves]
+Agemen					DF + x
+Uwa Agito				F + a
+Shimo Agito				DF + y
+
+[Special Moves]
+Zan-ei Ken (SC)				DB, F, x or y
+Hisho Ken				D, DB, B, x or y
+Shoryu Dan (SC)				F, D, DF, x or y
+Kuha Dan (SC)				B, DB, D, DF, F, a or b
+„¯ - Brake								x + a
+Gen-ei Shiranui				D, DF, F, a or b (in Air)
+„° - Gen-ei Shiranui Uwa Agito			a
+ „¯- Gen-ei Shiranui Shimo Agito (SC)		b
+
+[EX Special Moves](Uses 1 Power Bars)
+Zan-ei Ken (SC)				DB, F, x + y
+Hisho Ken				D, DB, B, x + y
+Shoryu Dan (SC)				F, D, DF, x + y
+Kuha Dan (SC)				B, DB, D, DF, F, a + b
+„¯ - Brake								x + a
+Bakushin				D, DF, F, a + b (in Air)
+
+[Desperate Moves](Uses 1 Power Bars)
+Cho Reppa Dan				D, DB, B, DB, D, DF, F, a or b
+Dan Da Dan				D, DF, F, D, DF, F, x or y (Mash)
+
+[MAX Desperate Moves](Uses 2 Power Bars)
+Cho Reppa Da				D, DB, B, DB, D, DF, F, a + b
+Zan-ei Reppa				D, DB, B, DB, D, DF, F, x + y
+
+[CLIMAX Desperate Moves](Uses 3 Power Bars)
+Cho Shinsoku Zan-ei Ken			D, DB, B, DB, D, DF, F, y + b

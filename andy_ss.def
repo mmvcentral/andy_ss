@@ -1,0 +1,29 @@
+[Info]
+Name         = "Andy Bogard"
+DisplayName  = "Andy"
+VersionDate  = 09,02,2023
+MugenVersion = 04,14,2002
+Author       = "Soy Sauce"
+Pal.Defaults = 1,2
+
+[Files]
+Cmd     = Andy.cmd
+Cns     = !config.cns
+St      = Andy.cns
+St2     = Andy-N.cns
+St3     = Andy-S.cns
+St4     = Andy-EX.cns
+St5     = Andy-H.cns
+St6     = Andy-2.cns
+St7     = !config.cns
+StCommon = common1.cns
+Sprite  = Andy.sff
+Anim    = Andy.air
+Sound   = Andy.snd
+
+Pal1 = act/01.act
+Pal2 = act/02.act
+Pal3 = act/03.act
+Pal4 = act/04.act
+Pal5 = act/05.act
+Pal6 = act/06.act
